@@ -14,7 +14,7 @@ public class Reading_Input {
         System.out.println("Enter a string");
         String str = sc.next();
         System.out.println("Enter the character value");
-        char ch = sc.nextLine().charAt(0);
+        char ch = sc.next().charAt(0);
 
         System.out.println("");
         System.out.println("Value of Integer is "+num1);
