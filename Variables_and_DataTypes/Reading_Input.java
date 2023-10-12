@@ -13,11 +13,14 @@ public class Reading_Input {
         boolean val = sc.nextBoolean();
         System.out.println("Enter a string");
         String str = sc.next();
+        System.out.println("Enter the character value");
+        char ch = sc.nextLine().charAt(0);
 
         System.out.println("");
         System.out.println("Value of Integer is "+num1);
         System.out.println("Value of Float is "+num2);
         System.out.println("Value of Boolean is "+val);
         System.out.println("Value of String is "+str);
+        System.out.println("Value of character is "+ch);
     }
 }
