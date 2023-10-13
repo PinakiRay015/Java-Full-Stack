@@ -11,6 +11,6 @@ public class myString {
         System.out.println(str2);
 
         //concatenating Strings (means to merge or join two string together)
-        System.out.println(str1+str2);
+        System.out.println(str1.concat(str2));
     }
 }
