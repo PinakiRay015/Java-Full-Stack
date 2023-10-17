@@ -1,3 +1,4 @@
+//java program to use the getters and setters for accessing private data of a class
 package OOP.Getters_and_Setters;
 
 import java.util.Scanner;
