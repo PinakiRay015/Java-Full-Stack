@@ -1,3 +1,4 @@
+//java program to implement constructor and taking the private data using getters
 package Constructors;
 import java.util.Scanner;
 class studentData
