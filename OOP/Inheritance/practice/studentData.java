@@ -28,32 +28,29 @@ class studentMarks extends studentBio
     private int subjectiveMarks;
     private int objectiveMarks;
 
-    public int getSubjectiveMarks() {
-        return subjectiveMarks;
-    }
-
-    public void setSubjectiveMarks() {
-        System.out.println("Enter the marks obtain in subjective");
+    @Override
+    public void setDetails()
+    {
+        super.setDetails();
+        System.out.println("Enter the subjective marks");
         subjectiveMarks = sc.nextInt();
-    }
-
-    public int getObjectiveMarks() {
-        return objectiveMarks;
-    }
-
-    public void setObjectiveMarks() {
-        System.out.println("Enter the marks obtain in objective");
+        System.out.println("Enter the objective marks");
         objectiveMarks = sc.nextInt();
     }
+
+    @Override
+    public void displayDetails()
+    {
+        super.displayDetails();
+        System.out.println("The marks secured by the student in subjective is "+subjectiveMarks+" and in objective is "+objectiveMarks);
+    }
+
 }
 public class studentData {
     public static void main(String[] args)
     {
         studentMarks stdmarks = new studentMarks();
         stdmarks.setDetails();
-        stdmarks.setObjectiveMarks();
-        stdmarks.setSubjectiveMarks();
         stdmarks.displayDetails();
-        System.out.println("The marks obtain by the student in subjective is "+stdmarks.getSubjectiveMarks()+" and in objective is "+stdmarks.getObjectiveMarks());
     }
 }
