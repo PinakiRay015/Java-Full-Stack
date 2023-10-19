@@ -1,4 +1,4 @@
-//java program to demonstrate multi level inheritance
+//java program to demonstrate multiple inheritance
 package OOP.Inheritance;
 
 class mobile
@@ -26,7 +26,7 @@ class samsungS23 extends mobile
         System.out.println("It has android OS");
     }
 }
-public class multiLevel {
+public class multiple {
     public static void main(String[] args) {
 
         iphone15 iphn = new iphone15();
