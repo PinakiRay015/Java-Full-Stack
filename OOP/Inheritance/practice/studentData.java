@@ -46,11 +46,31 @@ class studentMarks extends studentBio
     }
 
 }
+
+class sports extends studentMarks
+{
+    private char sportsMarks;
+    @Override
+    public void setDetails()
+    {
+        super.setDetails();
+        System.out.println("Enter the grade obtained the sports activity");
+        sportsMarks = sc.next().charAt(0);
+    }
+
+    @Override
+    public void displayDetails()
+    {
+        super.displayDetails();
+        System.out.println("Marks obtain by the student in sports activity is "+sportsMarks);
+    }
+}
 public class studentData {
     public static void main(String[] args)
     {
         studentMarks stdmarks = new studentMarks();
-        stdmarks.setDetails();
-        stdmarks.displayDetails();
+        sports spt = new sports();
+        spt.setDetails();
+        spt.displayDetails();
     }
 }
