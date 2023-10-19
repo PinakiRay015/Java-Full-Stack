@@ -13,7 +13,7 @@ class dog extends animal
 {
     @Override
     public void makeSound() {
-        super.makeSound();
+        super.makeSound(); //super keyword is used to fetch the methods/method of parent class/classes
         System.out.println("Dogs make bark sound");
     }
 }
