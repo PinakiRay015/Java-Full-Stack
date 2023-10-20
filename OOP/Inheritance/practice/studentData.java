@@ -25,8 +25,8 @@ class studentBio
 
 class studentMarks extends studentBio
 {
-    private int subjectiveMarks;
-    private int objectiveMarks;
+    protected int subjectiveMarks;
+    protected int objectiveMarks;
 
     @Override
     public void setDetails()
@@ -44,6 +44,7 @@ class studentMarks extends studentBio
         super.displayDetails();
         System.out.println("The marks secured by the student in subjective is "+subjectiveMarks+" and in objective is "+objectiveMarks);
     }
+
 
 }
 
@@ -65,12 +66,24 @@ class sports extends studentMarks
         System.out.println("Marks obtain by the student in sports activity is "+sportsMarks);
     }
 }
+
+class result extends studentMarks
+{
+    public void displayDetails(int subjeciveMarks , int objectiveMarks)
+    {
+        this.subjectiveMarks = subjeciveMarks;
+        this.objectiveMarks = objectiveMarks;
+        float avg = (subjectiveMarks + objectiveMarks)/2f;
+        System.out.println("The average marks of subjective and objective is "+avg);
+    }
+}
 public class studentData {
     public static void main(String[] args)
     {
-        studentMarks stdmarks = new studentMarks();
         sports spt = new sports();
         spt.setDetails();
         spt.displayDetails();
+        result stdResult = new result();
+        stdResult.displayDetails(spt.subjectiveMarks , spt.objectiveMarks);
     }
 }
